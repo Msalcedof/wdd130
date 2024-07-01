@@ -22,12 +22,13 @@ h1,h2{
 }
 
 nav a{
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 .hero {
     position: relative;
+    width: 115%;
 }
 
 .hero img {
@@ -38,19 +39,23 @@ nav a{
 
 .hero h1 {
     position: absolute;
-    top: -40%; 
-    left: 280px; 
-    background-color: rgba(109, 102, 102, 0.7);
+    width: 140%;
+    text-align: center;
+    top: -120%; 
+    left: -16%; 
+    background-color: rgba(74, 72, 102, 0.521);
     color: var(--primary-color);
-    font-size: 2.4rem;
+    font-size: 2.9rem;
 }
 
 .hero article  {
     position: absolute;
-    top: 75%; 
+    width: 70%;
+    top: 50%; 
     left: 40%; 
-    transform: translate(-68%, -70%);
-    padding: 30px;
+    transform: translate(-40%, -30%);
+    background-color: #3bb130b4;
+    padding: 8px;
       
 }
 
@@ -61,6 +66,13 @@ nav a{
 
 .hero article img {
     float: right;
-    margin-right: -400px; 
+    width: 195px;
+    margin-right: -5px; 
      
+}
+
+/*adding color to the section <p>*/
+section{
+    color: #3bb130;
+    font-weight: bold;
 }
