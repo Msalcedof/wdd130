@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+*{
+    margin: 0%;
+   
+}
+
 
 :root {
   --primary-color: #010507; 
@@ -12,37 +17,71 @@
 
 body{
     font-family: var(--heading-font);
-    max-width: 1000px;
+    max-width: 100%;
     padding: 20px;
 }
 
-h1,h2{
+h1, h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px
+    
+}
+
+.logo img{
+    width: 70%;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: var(--heading-font);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0px;
+}
+
 nav a{
     color: var(--primary-color);
+    margin: 0px;
+    width: 100px;
+    padding: 0px 6px;
     text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
 }
+
 
 .hero {
     position: relative;
-    width: 115%;
+    width: 100%;
 }
 
 .hero img {
     display: block;
-    width: 100%;
+    width: 101%;
     height: auto;
+    position: relative;
+    left: 0%;
+    margin: 0px auto;
 }
 
 .hero h1 {
     position: absolute;
     width: 140%;
     text-align: center;
-    top: -120%; 
-    left: -16%; 
+    top: -110%; 
+    left: -14%; 
     background-color: rgba(74, 72, 102, 0.521);
     color: var(--primary-color);
     font-size: 2.9rem;
@@ -50,9 +89,9 @@ nav a{
 
 .hero article  {
     position: absolute;
-    width: 70%;
+    width: 71%;
     top: 50%; 
-    left: 40%; 
+    left: 39%; 
     transform: translate(-40%, -30%);
     background-color: #3bb130b4;
     padding: 8px;
@@ -72,7 +111,93 @@ nav a{
 }
 
 /*adding color to the section <p>*/
-section{
-    color: #3bb130;
-    font-weight: bold;
+
+.containerhistory{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    gap: 1px;
+    color: #046611;
+
+
+}
+
+.containerhistory p, .containerhistory img{
+    width: 30%;
+    margin: 0% auto ;
+    
+    
+}
+
+.containerhistory img{
+    width: 20%;
+    margin: 1px auto;
+}
+
+.history h2 {
+    text-align: center;
+    font-size: 35px;
+    
+}
+
+.adventures {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.adventures h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Five columns, equal width */
+    gap: 1px; /* Gap between figures */
+    width: 100%;
+}
+
+.adventure-grid figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.adventure-grid img {
+    width: 130%;
+    max-width: 100%;
+    height: auto;
+}
+
+.adventure-grid figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1%;
+    font-size: 15px;
+    
+    
+    
+}
+
+.sociallinks {
+    display: flex;
+    width: 30%;
+}
+
+.sociallinks img {
+    display: flex;
+    max-width: 60%;
+    height: auto;
+    gap: 0px;
+    
 }
