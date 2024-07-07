@@ -59,6 +59,8 @@ nav a{
     font-weight: bold;
     text-align: center;
     font-size: 1.1rem;
+    border: 1px #010507 solid;
+    background-color: #55555586;
 }
 
 
