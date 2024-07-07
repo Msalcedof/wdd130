@@ -167,8 +167,8 @@ nav a{
 }
 
 .adventure-grid img {
-    width: 130%;
-    max-width: 100%;
+    width: 100%;
+    max-width: 85%;
     height: auto;
 }
 
