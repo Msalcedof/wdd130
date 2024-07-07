@@ -44,13 +44,14 @@ h1 {
     font-family: var(--heading-font);
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: flex-end;
     gap: 0px;
+    
 }
 
-nav a{
+header nav a{
     color: var(--primary-color);
     margin: 0px;
     width: 100px;
@@ -61,6 +62,7 @@ nav a{
     font-size: 1.1rem;
     border: 1px #010507 solid;
     background-color: #55555586;
+    
 }
 
 
@@ -184,8 +186,9 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 1%;
+    padding: 5%;
     font-size: 15px;
+    text-align: right;
     
     
     
@@ -193,13 +196,16 @@ footer {
 
 .sociallinks {
     display: flex;
-    width: 30%;
+    justify-content: flex-end;
+    width: 35%;
+    gap: 10%;
+    
 }
 
 .sociallinks img {
-    display: flex;
-    max-width: 60%;
+    align-items: end;
+    max-width: 70%;
     height: auto;
-    gap: 0px;
+    
     
 }
