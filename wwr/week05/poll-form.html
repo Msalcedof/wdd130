@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User poll</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Marco Salcedo | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for="Useremail">Email</label>
+                <input type="email" id="useremail" name="useremail">
+            </fieldset>
+            <fieldset>
+                <legend>Quesions</legend>
+                <label for="browser">What is your Favorite browser</label>
+                <select id="browser" name="browser"><br>
+                    <option value="chrome">chrome</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Edge">Edge</option>
+                    <option value="Brave">Brave</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="Pet">Do You Have a  household Pet?</label>
+                <input type="checkbox" id="Pet" name="Pet">
+                <label for="feedback">List the places you have lived:</label>
+                <textarea id="feedbaack" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>©2024 | HTML Form - User Poll Activity | Marco Salcedo</p>
+    </footer>
+</body>
+</html>
