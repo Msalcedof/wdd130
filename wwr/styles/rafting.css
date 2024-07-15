@@ -116,34 +116,7 @@ header nav a{
 
 /*adding color to the section <p>*/
 
-.containerhistory{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    gap: 1px;
-    color: #046611;
 
-
-}
-
-.containerhistory p, .containerhistory img{
-    width: 30%;
-    margin: 0% auto ;
-    
-    
-}
-
-.containerhistory img{
-    width: 20%;
-    margin: 1px auto;
-}
-
-.history h2 {
-    text-align: center;
-    font-size: 35px;
-    
-}
 
 .adventures {
     width: 100%;
@@ -189,7 +162,7 @@ footer {
     padding: 5%;
     font-size: 15px;
     text-align: right;
-    
+  
     
     
 }
@@ -208,4 +181,123 @@ footer {
     height: auto;
     
     
+}
+/*----------------------------------------*/
+/*working on addition*/
+.employee-profiles {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.employee-grid figure {
+    text-align: center;
+}
+
+.employee-grid img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.employee-grid figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.contact-form {
+    font-family: var(--paragraph-font);
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contact-form .checkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contact-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #095e14;
+}
+
+.company-info h2{
+    font-size: 35px;
+    padding: 5%;
+    font-family:var(--heading-font);
+
+}
+
+.company-info{
+    font-family: var(--paragraph-font);
+    font-weight: bold;
+}
+
+.employee-profiles h2{
+    text-align: center;
+    font-size: 35px;
+    padding: 5%;
+    font-family:var(--heading-font);
+    
+}
+.employee-profiles{
+    font-family: var(--paragraph-font);
+}
+
+footer a{
+    font-family: var(--paragraph-font);
+    font-weight: bold;
+    color:rgba(48, 41, 41, 0.91) ;
+    text-decoration: none;
+
 }
