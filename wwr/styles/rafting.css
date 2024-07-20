@@ -316,12 +316,13 @@ footer a{
 
 .trip-description h2{
     text-align: center;
+    color: var(--secondary-color);
 
 }
 
 .trip {
     border: 1px solid #ddd; /* Light gray border */
-    padding: 15px;
+    padding: 25px;
     margin-bottom: 20px;
     background-color: #fff; /* White background */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
@@ -338,11 +339,13 @@ footer a{
     font-size: 1.5rem;
     color: #333; /* Dark text color */
     margin-bottom: 10px;
+    
 }
 
 .trip p {
     line-height: 1.6;
-    color: #666; /* Medium gray text color */
+    color: var(--secondary-color); /* Medium gray text color */
+    font-weight: bold;
 }
 
 .trip-table h2{
@@ -358,12 +361,12 @@ footer a{
     padding: 5px 5px;
     text-decoration: none;
     font-size: 1rem;
-    border: 1px #010507 solid;
+    
         
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .trip {
         padding: 10px;
     }
