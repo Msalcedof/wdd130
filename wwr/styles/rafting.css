@@ -451,7 +451,7 @@ body {
 }
 
 .cta h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     color: var(--primary-color);
 }
@@ -468,7 +468,7 @@ body {
 }
 
 .offerings h2 {
-    font-size: 2rem;
+    font-size: 10%;
     margin-bottom: 20px;
     color: var(--primary-color);
 }
