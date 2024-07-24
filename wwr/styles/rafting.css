@@ -283,6 +283,7 @@ footer {
     font-weight: bold;
 }
 
+
 .employee-profiles h2{
     text-align: center;
     font-size: 35px;
@@ -306,72 +307,222 @@ footer a{
 
 .cta {
     text-align: center;
-    
-}
-.trip-description {
-    padding: 20px;
-    background-color: #f9f9f9;
     margin-bottom: 20px;
 }
 
-.trip-description h2{
-    text-align: center;
-    color: var(--secondary-color);
-
+.cta h2 {
+    font-size: 2rem;
+    color: #333;
 }
 
+.cta p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Trip descriptions */
 .trip {
-    border: 1px solid #ddd; /* Light gray border */
-    padding: 25px;
+    border: 1px solid #ddd;
+    padding: 20px;
     margin-bottom: 20px;
-    background-color: #fff; /* White background */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .trip img {
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
     margin-bottom: 10px;
-    border-radius: 5px; /* Rounded corners for images */
 }
 
 .trip h3 {
     font-size: 1.5rem;
-    color: #333; /* Dark text color */
+    color: #333;
     margin-bottom: 10px;
-    
 }
 
 .trip p {
-    line-height: 1.6;
-    color: var(--secondary-color); /* Medium gray text color */
+    color: #666;
+}
+
+/* Trip table */
+.trip-table {
+    margin-top: 40px;
+}
+
+.trip-table a{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.trip-table th {
+    background-color: #f2f2f2;
+    color: #333;
     font-weight: bold;
 }
 
-.trip-table h2{
-    
-    padding: 25px;
-    
-}
-
-.trip-table  {
-    
-    color: var(--primary-color);
-    margin: 100px;
-    padding: 5px 5px;
-    text-decoration: none;
-    font-size: 1rem;
-    
-        
-}
-
-
-@media screen and (max-width: 800px) {
+/* Responsive design */
+@media screen and (max-width: 768px) {
     .trip {
         padding: 10px;
     }
-
+    .cta h2 {
+        font-size: 1.5rem;
+    }
     .trip h3 {
         font-size: 1.3rem;
     }
+}
+/*------------------------------------------------*/
+/*working in the index.html*/
+
+body {
+    font-family: var(--paragraph-font);
+    line-height: 1.2;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+    color: #333; /* Adjust text color */
+}
+
+
+
+/* Styles for Newsletter Sign-Up Form */
+.newsletter {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.newsletter-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: #4826c2;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button[type="submit"]:hover {
+    background-color: #095e14;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.cta p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* CSS Grid Layout for Offerings */
+.offerings {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.offerings h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.offerings-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.offerings-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.offerings-item h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.offerings-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.hero-text h1{
+    padding: 1%;
+    top: -1%;
+    
+}
+
+.hero img{
+    max-width: 80%;
+    height: auto;
+    padding: 7%;
+        
+}
+
+.hero-text a{
+    padding: 0%;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
 }
