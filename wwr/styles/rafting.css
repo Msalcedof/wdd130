@@ -82,10 +82,10 @@ header nav a{
 
 .hero h1 {
     position: absolute;
-    width: 140%;
+    width: 111%;
     text-align: center;
-    top: -110%; 
-    left: -14%; 
+    top: -80%; 
+    left: -0.3%; 
     background-color: rgba(74, 72, 102, 0.521);
     color: var(--primary-color);
     font-size: 2.9rem;
